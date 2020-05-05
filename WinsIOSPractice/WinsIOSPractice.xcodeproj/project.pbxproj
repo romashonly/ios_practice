@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578691C0B2ECBCEF62620174 /* Pods_WinsIOSPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AABAAC0B101B3BBF117A87 /* Pods_WinsIOSPractice.framework */; };
+		83E803952461D242004418A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803942461D242004418A8 /* AppDelegate.swift */; };
+		83E803972461D242004418A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803962461D242004418A8 /* SceneDelegate.swift */; };
+		83E803992461D242004418A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803982461D242004418A8 /* ViewController.swift */; };
+		83E8039C2461D242004418A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E8039A2461D242004418A8 /* Main.storyboard */; };
+		83E8039E2461D24A004418A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E8039D2461D24A004418A8 /* Assets.xcassets */; };
+		83E803A12461D24A004418A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E8039F2461D24A004418A8 /* LaunchScreen.storyboard */; };
+		83E803AE2461D5EC004418A8 /* TrickDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803A92461D5EC004418A8 /* TrickDTO.swift */; };
+		83E803AF2461D5EC004418A8 /* TotalStatsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803AA2461D5EC004418A8 /* TotalStatsDTO.swift */; };
+		83E803B02461D5EC004418A8 /* DTOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803AB2461D5EC004418A8 /* DTOProtocol.swift */; };
+		83E803B12461D5EC004418A8 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803AC2461D5EC004418A8 /* UserDTO.swift */; };
+		83E803B22461D5EC004418A8 /* ChallengeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803AD2461D5EC004418A8 /* ChallengeDTO.swift */; };
+		83E803B62461D9EA004418A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803B52461D9EA004418A8 /* User.swift */; };
+		83E803B82461D9F4004418A8 /* Trick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803B72461D9F4004418A8 /* Trick.swift */; };
+		83E803BA2461DA51004418A8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803B92461DA51004418A8 /* DataManager.swift */; };
+		83E803BC2461DA6B004418A8 /* USRDefKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803BB2461DA6B004418A8 /* USRDefKeys.swift */; };
+		83E803BE2461DA7E004418A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803BD2461DA7E004418A8 /* LocationManager.swift */; };
+		83E803C02461DA93004418A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803BF2461DA93004418A8 /* NetworkManager.swift */; };
+		83E803D42461DD04004418A8 /* GameViewPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C32461DD04004418A8 /* GameViewPresentor.swift */; };
+		83E803D52461DD04004418A8 /* SpeechInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C42461DD04004418A8 /* SpeechInfo.swift */; };
+		83E803D62461DD04004418A8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C52461DD04004418A8 /* GameView.swift */; };
+		83E803D72461DD04004418A8 /* GameViewAssemly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C62461DD04004418A8 /* GameViewAssemly.swift */; };
+		83E803D82461DD04004418A8 /* GameViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C72461DD04004418A8 /* GameViewInteractor.swift */; };
+		83E803D92461DD04004418A8 /* GameViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C82461DD04004418A8 /* GameViewProtocols.swift */; };
+		83E803DA2461DD04004418A8 /* GameViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803C92461DD04004418A8 /* GameViewRouter.swift */; };
+		83E803DB2461DD04004418A8 /* RootVCPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803CB2461DD04004418A8 /* RootVCPresentor.swift */; };
+		83E803DC2461DD04004418A8 /* RootVCAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803CC2461DD04004418A8 /* RootVCAssembly.swift */; };
+		83E803DD2461DD04004418A8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803CE2461DD04004418A8 /* RootViewController.swift */; };
+		83E803DE2461DD04004418A8 /* RootVCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803CF2461DD04004418A8 /* RootVCTableView.swift */; };
+		83E803DF2461DD04004418A8 /* RootVCChalengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803D02461DD04004418A8 /* RootVCChalengeView.swift */; };
+		83E803E02461DD04004418A8 /* RootVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803D12461DD04004418A8 /* RootVCProtocol.swift */; };
+		83E803E12461DD04004418A8 /* RootVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803D22461DD04004418A8 /* RootVCRouter.swift */; };
+		83E803E22461DD04004418A8 /* RootVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E803D32461DD04004418A8 /* RootVCInteractor.swift */; };
+		83E804472461EA6C004418A8 /* TrickRegProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804262461EA6B004418A8 /* TrickRegProtocol.swift */; };
+		83E804482461EA6C004418A8 /* TrickRegRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804272461EA6B004418A8 /* TrickRegRouter.swift */; };
+		83E804492461EA6C004418A8 /* TrickRegPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804282461EA6B004418A8 /* TrickRegPresentor.swift */; };
+		83E8044A2461EA6C004418A8 /* TrickRegAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804292461EA6B004418A8 /* TrickRegAssembly.swift */; };
+		83E8044B2461EA6C004418A8 /* TrickRegInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8042A2461EA6B004418A8 /* TrickRegInteractor.swift */; };
+		83E8044C2461EA6C004418A8 /* TricksRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8042B2461EA6C004418A8 /* TricksRegVC.swift */; };
+		83E8044D2461EA6C004418A8 /* RegHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8042C2461EA6C004418A8 /* RegHeaderView.swift */; };
+		83E8044E2461EA6C004418A8 /* SportRegPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8042E2461EA6C004418A8 /* SportRegPresentor.swift */; };
+		83E8044F2461EA6C004418A8 /* SportRegProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8042F2461EA6C004418A8 /* SportRegProtocol.swift */; };
+		83E804502461EA6C004418A8 /* SportRegInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804302461EA6C004418A8 /* SportRegInteractor.swift */; };
+		83E804512461EA6C004418A8 /* SportRegRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804312461EA6C004418A8 /* SportRegRouter.swift */; };
+		83E804522461EA6C004418A8 /* SportRegAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804322461EA6C004418A8 /* SportRegAssembly.swift */; };
+		83E804532461EA6C004418A8 /* SportsRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804332461EA6C004418A8 /* SportsRegVC.swift */; };
+		83E804542461EA6C004418A8 /* UserInfoRegRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804352461EA6C004418A8 /* UserInfoRegRouter.swift */; };
+		83E804562461EA6C004418A8 /* UserInfoRegProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804372461EA6C004418A8 /* UserInfoRegProtocol.swift */; };
+		83E804572461EA6C004418A8 /* UserInfoRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804382461EA6C004418A8 /* UserInfoRegistrationVC.swift */; };
+		83E804582461EA6C004418A8 /* UserInfoRegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804392461EA6C004418A8 /* UserInfoRegistrationAssembly.swift */; };
+		83E804592461EA6C004418A8 /* UserInfoRegPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8043A2461EA6C004418A8 /* UserInfoRegPresentor.swift */; };
+		83E8045A2461EA6C004418A8 /* UserInfoRegInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8043B2461EA6C004418A8 /* UserInfoRegInteractor.swift */; };
+		83E8045B2461EA6C004418A8 /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8043D2461EA6C004418A8 /* SignInProtocols.swift */; };
+		83E8045C2461EA6C004418A8 /* SignInINteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8043E2461EA6C004418A8 /* SignInINteractor.swift */; };
+		83E8045D2461EA6C004418A8 /* SignInPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8043F2461EA6C004418A8 /* SignInPresentor.swift */; };
+		83E8045E2461EA6C004418A8 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804402461EA6C004418A8 /* SignInRouter.swift */; };
+		83E804612461EA6C004418A8 /* SignInAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804432461EA6C004418A8 /* SignInAssembly.swift */; };
+		83E804642461EA6C004418A8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804462461EA6C004418A8 /* SignInViewController.swift */; };
+		83E804752461EC91004418A8 /* DoneChallengeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804662461EC91004418A8 /* DoneChallengeRouter.swift */; };
+		83E804762461EC91004418A8 /* DoneChallengePresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804672461EC91004418A8 /* DoneChallengePresentor.swift */; };
+		83E804772461EC91004418A8 /* DoneChallengeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804682461EC91004418A8 /* DoneChallengeProtocols.swift */; };
+		83E804782461EC91004418A8 /* DoneChalengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804692461EC91004418A8 /* DoneChalengeVC.swift */; };
+		83E804792461EC91004418A8 /* DoneChallengeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8046A2461EC91004418A8 /* DoneChallengeAssembly.swift */; };
+		83E8047A2461EC91004418A8 /* DoneChallengeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8046B2461EC91004418A8 /* DoneChallengeInteractor.swift */; };
+		83E8047B2461EC91004418A8 /* Date.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8046D2461EC91004418A8 /* Date.extension.swift */; };
+		83E8047C2461EC91004418A8 /* UIColor.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8046E2461EC91004418A8 /* UIColor.extension.swift */; };
+		83E8047D2461EC91004418A8 /* ScreenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8046F2461EC91004418A8 /* ScreenTheme.swift */; };
+		83E8047E2461EC91004418A8 /* StatisticPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804712461EC91004418A8 /* StatisticPresentor.swift */; };
+		83E8047F2461EC91004418A8 /* StatisticProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804722461EC91004418A8 /* StatisticProtocol.swift */; };
+		83E804802461EC91004418A8 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804732461EC91004418A8 /* StatisticViewController.swift */; };
+		83E804812461EC91004418A8 /* StatisticsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804742461EC91004418A8 /* StatisticsInteractor.swift */; };
+		83E804832461EDC5004418A8 /* TurnamentPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E804822461EDC5004418A8 /* TurnamentPreviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19791FAB1E065C641B79FBC2 /* Pods-WinsIOSPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinsIOSPractice.debug.xcconfig"; path = "Target Support Files/Pods-WinsIOSPractice/Pods-WinsIOSPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		41AABAAC0B101B3BBF117A87 /* Pods_WinsIOSPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WinsIOSPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E803912461D242004418A8 /* WinsIOSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinsIOSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E803942461D242004418A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83E803962461D242004418A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83E803982461D242004418A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83E8039B2461D242004418A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83E8039D2461D24A004418A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83E803A02461D24A004418A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83E803A22461D24A004418A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E803A92461D5EC004418A8 /* TrickDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrickDTO.swift; sourceTree = "<group>"; };
+		83E803AA2461D5EC004418A8 /* TotalStatsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalStatsDTO.swift; sourceTree = "<group>"; };
+		83E803AB2461D5EC004418A8 /* DTOProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTOProtocol.swift; sourceTree = "<group>"; };
+		83E803AC2461D5EC004418A8 /* UserDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		83E803AD2461D5EC004418A8 /* ChallengeDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeDTO.swift; sourceTree = "<group>"; };
+		83E803B52461D9EA004418A8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83E803B72461D9F4004418A8 /* Trick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trick.swift; sourceTree = "<group>"; };
+		83E803B92461DA51004418A8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		83E803BB2461DA6B004418A8 /* USRDefKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRDefKeys.swift; sourceTree = "<group>"; };
+		83E803BD2461DA7E004418A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		83E803BF2461DA93004418A8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		83E803C32461DD04004418A8 /* GameViewPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewPresentor.swift; sourceTree = "<group>"; };
+		83E803C42461DD04004418A8 /* SpeechInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechInfo.swift; sourceTree = "<group>"; };
+		83E803C52461DD04004418A8 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		83E803C62461DD04004418A8 /* GameViewAssemly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewAssemly.swift; sourceTree = "<group>"; };
+		83E803C72461DD04004418A8 /* GameViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewInteractor.swift; sourceTree = "<group>"; };
+		83E803C82461DD04004418A8 /* GameViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewProtocols.swift; sourceTree = "<group>"; };
+		83E803C92461DD04004418A8 /* GameViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewRouter.swift; sourceTree = "<group>"; };
+		83E803CB2461DD04004418A8 /* RootVCPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCPresentor.swift; sourceTree = "<group>"; };
+		83E803CC2461DD04004418A8 /* RootVCAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCAssembly.swift; sourceTree = "<group>"; };
+		83E803CE2461DD04004418A8 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		83E803CF2461DD04004418A8 /* RootVCTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCTableView.swift; sourceTree = "<group>"; };
+		83E803D02461DD04004418A8 /* RootVCChalengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCChalengeView.swift; sourceTree = "<group>"; };
+		83E803D12461DD04004418A8 /* RootVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCProtocol.swift; sourceTree = "<group>"; };
+		83E803D22461DD04004418A8 /* RootVCRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCRouter.swift; sourceTree = "<group>"; };
+		83E803D32461DD04004418A8 /* RootVCInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVCInteractor.swift; sourceTree = "<group>"; };
+		83E804262461EA6B004418A8 /* TrickRegProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrickRegProtocol.swift; sourceTree = "<group>"; };
+		83E804272461EA6B004418A8 /* TrickRegRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrickRegRouter.swift; sourceTree = "<group>"; };
+		83E804282461EA6B004418A8 /* TrickRegPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrickRegPresentor.swift; sourceTree = "<group>"; };
+		83E804292461EA6B004418A8 /* TrickRegAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrickRegAssembly.swift; sourceTree = "<group>"; };
+		83E8042A2461EA6B004418A8 /* TrickRegInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrickRegInteractor.swift; sourceTree = "<group>"; };
+		83E8042B2461EA6C004418A8 /* TricksRegVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TricksRegVC.swift; sourceTree = "<group>"; };
+		83E8042C2461EA6C004418A8 /* RegHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegHeaderView.swift; sourceTree = "<group>"; };
+		83E8042E2461EA6C004418A8 /* SportRegPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportRegPresentor.swift; sourceTree = "<group>"; };
+		83E8042F2461EA6C004418A8 /* SportRegProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportRegProtocol.swift; sourceTree = "<group>"; };
+		83E804302461EA6C004418A8 /* SportRegInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportRegInteractor.swift; sourceTree = "<group>"; };
+		83E804312461EA6C004418A8 /* SportRegRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportRegRouter.swift; sourceTree = "<group>"; };
+		83E804322461EA6C004418A8 /* SportRegAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportRegAssembly.swift; sourceTree = "<group>"; };
+		83E804332461EA6C004418A8 /* SportsRegVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsRegVC.swift; sourceTree = "<group>"; };
+		83E804352461EA6C004418A8 /* UserInfoRegRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRegRouter.swift; sourceTree = "<group>"; };
+		83E804372461EA6C004418A8 /* UserInfoRegProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRegProtocol.swift; sourceTree = "<group>"; };
+		83E804382461EA6C004418A8 /* UserInfoRegistrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRegistrationVC.swift; sourceTree = "<group>"; };
+		83E804392461EA6C004418A8 /* UserInfoRegistrationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRegistrationAssembly.swift; sourceTree = "<group>"; };
+		83E8043A2461EA6C004418A8 /* UserInfoRegPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRegPresentor.swift; sourceTree = "<group>"; };
+		83E8043B2461EA6C004418A8 /* UserInfoRegInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRegInteractor.swift; sourceTree = "<group>"; };
+		83E8043D2461EA6C004418A8 /* SignInProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
+		83E8043E2461EA6C004418A8 /* SignInINteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInINteractor.swift; sourceTree = "<group>"; };
+		83E8043F2461EA6C004418A8 /* SignInPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresentor.swift; sourceTree = "<group>"; };
+		83E804402461EA6C004418A8 /* SignInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		83E804432461EA6C004418A8 /* SignInAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAssembly.swift; sourceTree = "<group>"; };
+		83E804462461EA6C004418A8 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		83E804662461EC91004418A8 /* DoneChallengeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneChallengeRouter.swift; sourceTree = "<group>"; };
+		83E804672461EC91004418A8 /* DoneChallengePresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneChallengePresentor.swift; sourceTree = "<group>"; };
+		83E804682461EC91004418A8 /* DoneChallengeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneChallengeProtocols.swift; sourceTree = "<group>"; };
+		83E804692461EC91004418A8 /* DoneChalengeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneChalengeVC.swift; sourceTree = "<group>"; };
+		83E8046A2461EC91004418A8 /* DoneChallengeAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneChallengeAssembly.swift; sourceTree = "<group>"; };
+		83E8046B2461EC91004418A8 /* DoneChallengeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneChallengeInteractor.swift; sourceTree = "<group>"; };
+		83E8046D2461EC91004418A8 /* Date.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.extension.swift; sourceTree = "<group>"; };
+		83E8046E2461EC91004418A8 /* UIColor.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.extension.swift; sourceTree = "<group>"; };
+		83E8046F2461EC91004418A8 /* ScreenTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTheme.swift; sourceTree = "<group>"; };
+		83E804712461EC91004418A8 /* StatisticPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticPresentor.swift; sourceTree = "<group>"; };
+		83E804722461EC91004418A8 /* StatisticProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticProtocol.swift; sourceTree = "<group>"; };
+		83E804732461EC91004418A8 /* StatisticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		83E804742461EC91004418A8 /* StatisticsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsInteractor.swift; sourceTree = "<group>"; };
+		83E804822461EDC5004418A8 /* TurnamentPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnamentPreviewViewController.swift; sourceTree = "<group>"; };
+		961FEFD701840AFB02F80B3F /* Pods-WinsIOSPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinsIOSPractice.release.xcconfig"; path = "Target Support Files/Pods-WinsIOSPractice/Pods-WinsIOSPractice.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83E8038E2461D242004418A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578691C0B2ECBCEF62620174 /* Pods_WinsIOSPractice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281E721DBC42C52BB3E9A289 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41AABAAC0B101B3BBF117A87 /* Pods_WinsIOSPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		472A6F02B6141F210A77A20D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19791FAB1E065C641B79FBC2 /* Pods-WinsIOSPractice.debug.xcconfig */,
+				961FEFD701840AFB02F80B3F /* Pods-WinsIOSPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83E803882461D242004418A8 = {
+			isa = PBXGroup;
+			children = (
+				83E803932461D242004418A8 /* WinsIOSPractice */,
+				83E803922461D242004418A8 /* Products */,
+				472A6F02B6141F210A77A20D /* Pods */,
+				281E721DBC42C52BB3E9A289 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83E803922461D242004418A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83E803912461D242004418A8 /* WinsIOSPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E803932461D242004418A8 /* WinsIOSPractice */ = {
+			isa = PBXGroup;
+			children = (
+				83E803942461D242004418A8 /* AppDelegate.swift */,
+				83E803962461D242004418A8 /* SceneDelegate.swift */,
+				83E803B32461D5F9004418A8 /* Model */,
+				83E803C12461DD04004418A8 /* RootVC */,
+				83E804242461EA6B004418A8 /* UserRegistration */,
+				83E804652461EC91004418A8 /* DoneChalengeVC */,
+				83E804702461EC91004418A8 /* StatisticVC */,
+				83E8046C2461EC91004418A8 /* Extensions */,
+				83E804822461EDC5004418A8 /* TurnamentPreviewViewController.swift */,
+				83E803982461D242004418A8 /* ViewController.swift */,
+				83E8039A2461D242004418A8 /* Main.storyboard */,
+				83E8039D2461D24A004418A8 /* Assets.xcassets */,
+				83E8039F2461D24A004418A8 /* LaunchScreen.storyboard */,
+				83E803A22461D24A004418A8 /* Info.plist */,
+			);
+			path = WinsIOSPractice;
+			sourceTree = "<group>";
+		};
+		83E803A82461D5EC004418A8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				83E803A92461D5EC004418A8 /* TrickDTO.swift */,
+				83E803AA2461D5EC004418A8 /* TotalStatsDTO.swift */,
+				83E803AB2461D5EC004418A8 /* DTOProtocol.swift */,
+				83E803AC2461D5EC004418A8 /* UserDTO.swift */,
+				83E803AD2461D5EC004418A8 /* ChallengeDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		83E803B32461D5F9004418A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83E803B42461D9C9004418A8 /* Entity */,
+				83E803A82461D5EC004418A8 /* DTO */,
+				83E803B92461DA51004418A8 /* DataManager.swift */,
+				83E803BB2461DA6B004418A8 /* USRDefKeys.swift */,
+				83E803BD2461DA7E004418A8 /* LocationManager.swift */,
+				83E803BF2461DA93004418A8 /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83E803B42461D9C9004418A8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				83E803B52461D9EA004418A8 /* User.swift */,
+				83E803B72461D9F4004418A8 /* Trick.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		83E803C12461DD04004418A8 /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				83E803C22461DD04004418A8 /* GameView */,
+				83E803CA2461DD04004418A8 /* RootViewController */,
+			);
+			path = RootVC;
+			sourceTree = "<group>";
+		};
+		83E803C22461DD04004418A8 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				83E803C32461DD04004418A8 /* GameViewPresentor.swift */,
+				83E803C42461DD04004418A8 /* SpeechInfo.swift */,
+				83E803C52461DD04004418A8 /* GameView.swift */,
+				83E803C62461DD04004418A8 /* GameViewAssemly.swift */,
+				83E803C72461DD04004418A8 /* GameViewInteractor.swift */,
+				83E803C82461DD04004418A8 /* GameViewProtocols.swift */,
+				83E803C92461DD04004418A8 /* GameViewRouter.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		83E803CA2461DD04004418A8 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83E803CB2461DD04004418A8 /* RootVCPresentor.swift */,
+				83E803CC2461DD04004418A8 /* RootVCAssembly.swift */,
+				83E803CD2461DD04004418A8 /* RootVCView */,
+				83E803D12461DD04004418A8 /* RootVCProtocol.swift */,
+				83E803D22461DD04004418A8 /* RootVCRouter.swift */,
+				83E803D32461DD04004418A8 /* RootVCInteractor.swift */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		83E803CD2461DD04004418A8 /* RootVCView */ = {
+			isa = PBXGroup;
+			children = (
+				83E803CE2461DD04004418A8 /* RootViewController.swift */,
+				83E803CF2461DD04004418A8 /* RootVCTableView.swift */,
+				83E803D02461DD04004418A8 /* RootVCChalengeView.swift */,
+			);
+			path = RootVCView;
+			sourceTree = "<group>";
+		};
+		83E804242461EA6B004418A8 /* UserRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				83E8042C2461EA6C004418A8 /* RegHeaderView.swift */,
+				83E804252461EA6B004418A8 /* TricksRegVC */,
+				83E8042D2461EA6C004418A8 /* Sports */,
+				83E804342461EA6C004418A8 /* UserInfo */,
+				83E8043C2461EA6C004418A8 /* SigIn */,
+			);
+			path = UserRegistration;
+			sourceTree = "<group>";
+		};
+		83E804252461EA6B004418A8 /* TricksRegVC */ = {
+			isa = PBXGroup;
+			children = (
+				83E804262461EA6B004418A8 /* TrickRegProtocol.swift */,
+				83E804272461EA6B004418A8 /* TrickRegRouter.swift */,
+				83E804282461EA6B004418A8 /* TrickRegPresentor.swift */,
+				83E804292461EA6B004418A8 /* TrickRegAssembly.swift */,
+				83E8042A2461EA6B004418A8 /* TrickRegInteractor.swift */,
+				83E8042B2461EA6C004418A8 /* TricksRegVC.swift */,
+			);
+			path = TricksRegVC;
+			sourceTree = "<group>";
+		};
+		83E8042D2461EA6C004418A8 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				83E8042E2461EA6C004418A8 /* SportRegPresentor.swift */,
+				83E8042F2461EA6C004418A8 /* SportRegProtocol.swift */,
+				83E804302461EA6C004418A8 /* SportRegInteractor.swift */,
+				83E804312461EA6C004418A8 /* SportRegRouter.swift */,
+				83E804322461EA6C004418A8 /* SportRegAssembly.swift */,
+				83E804332461EA6C004418A8 /* SportsRegVC.swift */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		83E804342461EA6C004418A8 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				83E804352461EA6C004418A8 /* UserInfoRegRouter.swift */,
+				83E804372461EA6C004418A8 /* UserInfoRegProtocol.swift */,
+				83E804382461EA6C004418A8 /* UserInfoRegistrationVC.swift */,
+				83E804392461EA6C004418A8 /* UserInfoRegistrationAssembly.swift */,
+				83E8043A2461EA6C004418A8 /* UserInfoRegPresentor.swift */,
+				83E8043B2461EA6C004418A8 /* UserInfoRegInteractor.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		83E8043C2461EA6C004418A8 /* SigIn */ = {
+			isa = PBXGroup;
+			children = (
+				83E8043D2461EA6C004418A8 /* SignInProtocols.swift */,
+				83E8043E2461EA6C004418A8 /* SignInINteractor.swift */,
+				83E8043F2461EA6C004418A8 /* SignInPresentor.swift */,
+				83E804402461EA6C004418A8 /* SignInRouter.swift */,
+				83E804432461EA6C004418A8 /* SignInAssembly.swift */,
+				83E804462461EA6C004418A8 /* SignInViewController.swift */,
+			);
+			path = SigIn;
+			sourceTree = "<group>";
+		};
+		83E804652461EC91004418A8 /* DoneChalengeVC */ = {
+			isa = PBXGroup;
+			children = (
+				83E804662461EC91004418A8 /* DoneChallengeRouter.swift */,
+				83E804672461EC91004418A8 /* DoneChallengePresentor.swift */,
+				83E804682461EC91004418A8 /* DoneChallengeProtocols.swift */,
+				83E804692461EC91004418A8 /* DoneChalengeVC.swift */,
+				83E8046A2461EC91004418A8 /* DoneChallengeAssembly.swift */,
+				83E8046B2461EC91004418A8 /* DoneChallengeInteractor.swift */,
+			);
+			path = DoneChalengeVC;
+			sourceTree = "<group>";
+		};
+		83E8046C2461EC91004418A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83E8046D2461EC91004418A8 /* Date.extension.swift */,
+				83E8046E2461EC91004418A8 /* UIColor.extension.swift */,
+				83E8046F2461EC91004418A8 /* ScreenTheme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83E804702461EC91004418A8 /* StatisticVC */ = {
+			isa = PBXGroup;
+			children = (
+				83E804712461EC91004418A8 /* StatisticPresentor.swift */,
+				83E804722461EC91004418A8 /* StatisticProtocol.swift */,
+				83E804732461EC91004418A8 /* StatisticViewController.swift */,
+				83E804742461EC91004418A8 /* StatisticsInteractor.swift */,
+			);
+			path = StatisticVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83E803902461D242004418A8 /* WinsIOSPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E803A52461D24A004418A8 /* Build configuration list for PBXNativeTarget "WinsIOSPractice" */;
+			buildPhases = (
+				A45BA17A2B83D848BB19D960 /* [CP] Check Pods Manifest.lock */,
+				83E8038D2461D242004418A8 /* Sources */,
+				83E8038E2461D242004418A8 /* Frameworks */,
+				83E8038F2461D242004418A8 /* Resources */,
+				9CE0984B5844A2BA67C44DF6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WinsIOSPractice;
+			productName = WinsIOSPractice;
+			productReference = 83E803912461D242004418A8 /* WinsIOSPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E803892461D242004418A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Роман Шуркин";
+				TargetAttributes = {
+					83E803902461D242004418A8 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 83E8038C2461D242004418A8 /* Build configuration list for PBXProject "WinsIOSPractice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83E803882461D242004418A8;
+			productRefGroup = 83E803922461D242004418A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83E803902461D242004418A8 /* WinsIOSPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83E8038F2461D242004418A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E803A12461D24A004418A8 /* LaunchScreen.storyboard in Resources */,
+				83E8039E2461D24A004418A8 /* Assets.xcassets in Resources */,
+				83E8039C2461D242004418A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CE0984B5844A2BA67C44DF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinsIOSPractice/Pods-WinsIOSPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinsIOSPractice/Pods-WinsIOSPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinsIOSPractice/Pods-WinsIOSPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45BA17A2B83D848BB19D960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WinsIOSPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83E8038D2461D242004418A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E804592461EA6C004418A8 /* UserInfoRegPresentor.swift in Sources */,
+				83E803992461D242004418A8 /* ViewController.swift in Sources */,
+				83E804752461EC91004418A8 /* DoneChallengeRouter.swift in Sources */,
+				83E804802461EC91004418A8 /* StatisticViewController.swift in Sources */,
+				83E803B02461D5EC004418A8 /* DTOProtocol.swift in Sources */,
+				83E803E22461DD04004418A8 /* RootVCInteractor.swift in Sources */,
+				83E803DE2461DD04004418A8 /* RootVCTableView.swift in Sources */,
+				83E803AF2461D5EC004418A8 /* TotalStatsDTO.swift in Sources */,
+				83E803DB2461DD04004418A8 /* RootVCPresentor.swift in Sources */,
+				83E804612461EA6C004418A8 /* SignInAssembly.swift in Sources */,
+				83E804512461EA6C004418A8 /* SportRegRouter.swift in Sources */,
+				83E8045A2461EA6C004418A8 /* UserInfoRegInteractor.swift in Sources */,
+				83E804782461EC91004418A8 /* DoneChalengeVC.swift in Sources */,
+				83E8044C2461EA6C004418A8 /* TricksRegVC.swift in Sources */,
+				83E8047B2461EC91004418A8 /* Date.extension.swift in Sources */,
+				83E804472461EA6C004418A8 /* TrickRegProtocol.swift in Sources */,
+				83E803D82461DD04004418A8 /* GameViewInteractor.swift in Sources */,
+				83E803D92461DD04004418A8 /* GameViewProtocols.swift in Sources */,
+				83E803AE2461D5EC004418A8 /* TrickDTO.swift in Sources */,
+				83E804572461EA6C004418A8 /* UserInfoRegistrationVC.swift in Sources */,
+				83E804812461EC91004418A8 /* StatisticsInteractor.swift in Sources */,
+				83E804792461EC91004418A8 /* DoneChallengeAssembly.swift in Sources */,
+				83E803952461D242004418A8 /* AppDelegate.swift in Sources */,
+				83E803D62461DD04004418A8 /* GameView.swift in Sources */,
+				83E803B62461D9EA004418A8 /* User.swift in Sources */,
+				83E803E12461DD04004418A8 /* RootVCRouter.swift in Sources */,
+				83E803B12461D5EC004418A8 /* UserDTO.swift in Sources */,
+				83E8044D2461EA6C004418A8 /* RegHeaderView.swift in Sources */,
+				83E804492461EA6C004418A8 /* TrickRegPresentor.swift in Sources */,
+				83E803DF2461DD04004418A8 /* RootVCChalengeView.swift in Sources */,
+				83E803DA2461DD04004418A8 /* GameViewRouter.swift in Sources */,
+				83E8047A2461EC91004418A8 /* DoneChallengeInteractor.swift in Sources */,
+				83E804762461EC91004418A8 /* DoneChallengePresentor.swift in Sources */,
+				83E803972461D242004418A8 /* SceneDelegate.swift in Sources */,
+				83E804832461EDC5004418A8 /* TurnamentPreviewViewController.swift in Sources */,
+				83E803BC2461DA6B004418A8 /* USRDefKeys.swift in Sources */,
+				83E803DD2461DD04004418A8 /* RootViewController.swift in Sources */,
+				83E8047D2461EC91004418A8 /* ScreenTheme.swift in Sources */,
+				83E803E02461DD04004418A8 /* RootVCProtocol.swift in Sources */,
+				83E804482461EA6C004418A8 /* TrickRegRouter.swift in Sources */,
+				83E804772461EC91004418A8 /* DoneChallengeProtocols.swift in Sources */,
+				83E8044B2461EA6C004418A8 /* TrickRegInteractor.swift in Sources */,
+				83E803BA2461DA51004418A8 /* DataManager.swift in Sources */,
+				83E803C02461DA93004418A8 /* NetworkManager.swift in Sources */,
+				83E804542461EA6C004418A8 /* UserInfoRegRouter.swift in Sources */,
+				83E8045D2461EA6C004418A8 /* SignInPresentor.swift in Sources */,
+				83E803B22461D5EC004418A8 /* ChallengeDTO.swift in Sources */,
+				83E8045C2461EA6C004418A8 /* SignInINteractor.swift in Sources */,
+				83E8047E2461EC91004418A8 /* StatisticPresentor.swift in Sources */,
+				83E8047C2461EC91004418A8 /* UIColor.extension.swift in Sources */,
+				83E804522461EA6C004418A8 /* SportRegAssembly.swift in Sources */,
+				83E803D72461DD04004418A8 /* GameViewAssemly.swift in Sources */,
+				83E804562461EA6C004418A8 /* UserInfoRegProtocol.swift in Sources */,
+				83E803D42461DD04004418A8 /* GameViewPresentor.swift in Sources */,
+				83E8045B2461EA6C004418A8 /* SignInProtocols.swift in Sources */,
+				83E8044E2461EA6C004418A8 /* SportRegPresentor.swift in Sources */,
+				83E804502461EA6C004418A8 /* SportRegInteractor.swift in Sources */,
+				83E804642461EA6C004418A8 /* SignInViewController.swift in Sources */,
+				83E803B82461D9F4004418A8 /* Trick.swift in Sources */,
+				83E804532461EA6C004418A8 /* SportsRegVC.swift in Sources */,
+				83E8045E2461EA6C004418A8 /* SignInRouter.swift in Sources */,
+				83E803DC2461DD04004418A8 /* RootVCAssembly.swift in Sources */,
+				83E803BE2461DA7E004418A8 /* LocationManager.swift in Sources */,
+				83E8047F2461EC91004418A8 /* StatisticProtocol.swift in Sources */,
+				83E8044A2461EA6C004418A8 /* TrickRegAssembly.swift in Sources */,
+				83E804582461EA6C004418A8 /* UserInfoRegistrationAssembly.swift in Sources */,
+				83E803D52461DD04004418A8 /* SpeechInfo.swift in Sources */,
+				83E8044F2461EA6C004418A8 /* SportRegProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83E8039A2461D242004418A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E8039B2461D242004418A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83E8039F2461D24A004418A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E803A02461D24A004418A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83E803A32461D24A004418A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83E803A42461D24A004418A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83E803A62461D24A004418A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19791FAB1E065C641B79FBC2 /* Pods-WinsIOSPractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6PAAYN46V;
+				INFOPLIST_FILE = WinsIOSPractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IosLab.WinsIOSPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83E803A72461D24A004418A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961FEFD701840AFB02F80B3F /* Pods-WinsIOSPractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6PAAYN46V;
+				INFOPLIST_FILE = WinsIOSPractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IosLab.WinsIOSPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83E8038C2461D242004418A8 /* Build configuration list for PBXProject "WinsIOSPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E803A32461D24A004418A8 /* Debug */,
+				83E803A42461D24A004418A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E803A52461D24A004418A8 /* Build configuration list for PBXNativeTarget "WinsIOSPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E803A62461D24A004418A8 /* Debug */,
+				83E803A72461D24A004418A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E803892461D242004418A8 /* Project object */;
+}
